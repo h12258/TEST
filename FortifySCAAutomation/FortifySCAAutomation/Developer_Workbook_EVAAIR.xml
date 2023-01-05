@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ReportDefinition type="standard" ID="developerWorkbookEvaair">
+    <TemplateName>Developer Workbook EVAAIR</TemplateName>
+    <TemplatePath></TemplatePath>
+    <LogoPath>/fortify.jpg</LogoPath>
+    <Footnote>程式碼安全檢測</Footnote>
+    <UserName>Fortify</UserName>
+    <ReportSection optionalSubsections="false" enabled="true">
+        <Title>報表彙總資訊</Title>
+        <SubSection enabled="true">
+            <Title>檢測資訊</Title>
+            <Description>提供顯示檢測的基本資訊</Description>
+            <Text>檢測日期: $SCAN_DATE$ &#xD;檢測主機名稱: $SCAN_COMPUTER_ID$ &#xD;檢測專案代號(BuildID): $PROJECT_NAME$  
+&#xD;檢測總檔案數: $NUMBER_OF_FILES$ &#xD;程式碼總行數: $TLOC$ &#xD;可執行的程式碼行數: $LOC$ &#xD;檢測花費時間(mm:ss): $SCAN_TIME$ &#xD;Fortify SCA 的版本:$FORTIFY_SCA_VERSION$ &#xD;檢測Rulepacks的版本: $RULEPACKS$ &#xD;
+     </Text>
+        </SubSection>
+        <SubSection enabled="true">
+            <Title>檢測問題彙總</Title>
+            <Description>列出 Critical,Medium,High,Low 的問題數</Description>
+            <IssueListing limit="-1" listing="false">
+                <Refinement></Refinement>
+                <Chart chartType="table">
+                    <Axis>Folder</Axis>
+                    <MajorAttribute>Analysis</MajorAttribute>
+                </Chart>
+            </IssueListing>
+        </SubSection>
+        <SubSection enabled="false">
+            <Title>檢測過程中的檢視訊息</Title>
+            <Description>列出檢測過程中的警示訊息</Description>
+            <Text>$WARNINGS$</Text>
+        </SubSection>
+    </ReportSection>
+    <ReportSection optionalSubsections="false" enabled="true">
+        <Title>問題類別彙總清單</Title>
+        <SubSection enabled="true">
+            <Title>問題類別數統計:嚴重風險(Critical)</Title>
+            <IssueListing limit="-1" listing="false">
+                <Refinement>[fortify priority order]:Critical</Refinement>
+                <Chart chartType="table">
+                    <Axis>Category</Axis>
+                    <MajorAttribute>Analysis</MajorAttribute>
+                </Chart>
+            </IssueListing>
+        </SubSection>
+		<SubSection enabled="true">
+            <Title>問題類別數統計:高風險(High)</Title>
+            <IssueListing limit="-1" listing="false">
+                <Refinement>[fortify priority order]:High</Refinement>
+                <Chart chartType="table">
+                    <Axis>Category</Axis>
+                    <MajorAttribute>Analysis</MajorAttribute>
+                </Chart>
+            </IssueListing>
+        </SubSection>
+        <SubSection enabled="true">
+            <Title>問題類別數統計:中風險(Meduim)</Title>
+            <IssueListing limit="-1" listing="false">
+                <Refinement>[fortify priority order]:Medium</Refinement>
+                <Chart chartType="table">
+                    <Axis>Category</Axis>
+                    <MajorAttribute>Analysis</MajorAttribute>
+                </Chart>
+            </IssueListing>
+        </SubSection>
+        <SubSection enabled="true">
+            <Title>問題類別數統計:低風險(Low)</Title>
+            <IssueListing limit="-1" listing="false">
+                <Refinement>[fortify priority order]:Low</Refinement>
+                <Chart chartType="table">
+                    <Axis>Category</Axis>
+                    <MajorAttribute>Analysis</MajorAttribute>
+                </Chart>
+            </IssueListing>
+        </SubSection>
+    </ReportSection>
+    <ReportSection optionalSubsections="true" enabled="true">
+        <Title>檢測問題明細</Title>
+        <SubSection enabled="true">
+            <Title>依據類別排序列出問題:嚴重風險(Critical)</Title>
+            <Description>依據類別排序列出問題:嚴重風險(Critical)</Description>
+            <IssueListing limit="-1" listing="true">
+                <Refinement>[fortify priority order]:&quot;Critical&quot;</Refinement>
+                <Chart chartType="list">
+                    <Axis>Category</Axis>
+                    <MajorAttribute>Analysis</MajorAttribute>
+                </Chart>
+            </IssueListing>
+        </SubSection>
+		<SubSection enabled="true">
+            <Title>依據類別排序列出問題:高風險(High)</Title>
+            <Description>依據類別排序列出問題:高風險(High)</Description>
+            <IssueListing limit="-1" listing="true">
+                <Refinement>[fortify priority order]:&quot;high&quot;</Refinement>
+                <Chart chartType="list">
+                    <Axis>Category</Axis>
+                    <MajorAttribute>Analysis</MajorAttribute>
+                </Chart>
+            </IssueListing>
+        </SubSection>
+        <SubSection enabled="true">
+            <Title>依據類別排序列出問題:中風險(Meduim)</Title>
+            <Description>依據類別排序列出問題:中風險(Meduim)</Description>
+            <IssueListing limit="-1" listing="true">
+                <Refinement>[fortify priority order]:&quot;Medium&quot;</Refinement>
+                <Chart chartType="list">
+                    <Axis>Category</Axis>
+                    <MajorAttribute>Analysis</MajorAttribute>
+                </Chart>
+            </IssueListing>
+        </SubSection>
+        <SubSection enabled="true">
+            <Title>依據類別排序列出問題:低風險(Low)</Title>
+            <Description>依據類別排序列出問題:低風險(Low)</Description>
+            <IssueListing limit="-1" listing="true">
+                <Refinement>[fortify priority order]:&quot;Low&quot;</Refinement>
+                <Chart chartType="list">
+                    <Axis>Category</Axis>
+                    <MajorAttribute>Analysis</MajorAttribute>
+                </Chart>
+            </IssueListing>
+        </SubSection>
+    </ReportSection>
+	<ReportSection enabled="true" optionalSubsections="true">
+		<Title>檢測的檔案清單</Title>
+		<SubSection enabled="true">
+			<Title>檢測的檔案清單</Title>
+			<Description>所有檢測的檔案清單</Description>
+			<Text>檢測的程式碼的主目錄: $SOURCE_BASE_PATH$
+檢測的檔案清單:
+$FILE_LISTING$</Text>
+		</SubSection>
+	</ReportSection>	
+</ReportDefinition>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FortifySCAAutomation.Configuration" Collapsed="true">
+    <Position X="2" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MgCCACBAEhIAUEAAUBQAAgAABAACAEIFAg1AAwCgloA=</HashCode>
+      <FileName>Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FortifySCAAutomation.FortifyScannedItem" Collapsed="true">
+    <Position X="3.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAIEQAAAAAAAgAAgABACoCJAAACAAgIAAAA=</HashCode>
+      <FileName>Contract\FortifyScannedItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FortifySCAAutomation.MSGReturnModel" Collapsed="true">
+    <Position X="6" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contract\MSGReturnModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FortifySCAAutomation.DisplayCode" Collapsed="true">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extension\ComponentModelExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FortifySCAAutomation.DeepCopyByExpressionTree" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBAFAACECAAQAQAPAACBAQUAghKAYgCGIBECQACCCA=</HashCode>
+      <FileName>Extension\DeepCopyByExpressionTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FortifySCAAutomation.Extension">
+    <Position X="9" Y="4.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAIAAUAAIAAAAAAIAAAAAAAAAAAIAQAAA=</HashCode>
+      <FileName>Extension\Extension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FortifySCAAutomation.Program">
+    <Position X="3.5" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAEAAAAAAAAAAAAAAAACgAYACAACAAAABRBAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FortifySCAAutomation.Utility">
+    <Position X="9" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FortifySCAAutomation.BuildCategory" Collapsed="true">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAEAEAAAA=</HashCode>
+      <FileName>Utility.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FortifySCAAutomation.Status" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkgDAAAA=</HashCode>
+      <FileName>Utility.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微軟正黑體" Size="10" />
+</ClassDiagram>
