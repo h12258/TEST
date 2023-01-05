@@ -39,6 +39,7 @@ namespace FortifySCAAutomation
         /// </summary>
         public Configuration()
         {
+            //add comment
             Console.WriteLine("Initializing...");
 
             Console.Write("Manager Mail Address: ");
