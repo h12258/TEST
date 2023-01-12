@@ -17,6 +17,7 @@ namespace FortifySCAAutomation
         #region 主流程
         static void Main(string[] args)
         {
+            //2. test 修改2
             /*
              *  A. 組態設定初始化 –呼叫Initialize以初始化Configuration (定義為全域變數)
                 B. 讀取Excel讀取需掃描的SLN檔 –呼叫ScannedItemRead
