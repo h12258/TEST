@@ -80,6 +80,7 @@ namespace FortifySCAAutomation
                 Console.WriteLine("Error : " + errorCount);
                 Console.WriteLine("Task done. Press any key to continue.");
                 Console.ReadLine();
+                //一次變更改兩個檔案program
             }
 
             

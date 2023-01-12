@@ -9,6 +9,7 @@ namespace FortifySCAAutomation
 {
     public partial class Program
     {
+        //一次變更改兩個檔案programBuild
         #region 取新版
         /// <summary>
         /// 將指定路徑底下的檔案全部取新版。
