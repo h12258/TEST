@@ -27,6 +27,7 @@ namespace FortifySCAAutomation
              */
             try
             {
+                //test 修改1
                 // A. 組態設定初始化 –呼叫Initialize以初始化Configuration
                 thisConfiguration = new Configuration();
                 // B. 讀取Excel讀取需掃描的SLN檔
